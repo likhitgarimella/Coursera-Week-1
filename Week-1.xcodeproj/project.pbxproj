@@ -14,6 +14,7 @@
 		02E0BE802628CBE900CCA508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E0BE7F2628CBE900CCA508 /* Assets.xcassets */; };
 		02E0BE832628CBE900CCA508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02E0BE812628CBE900CCA508 /* LaunchScreen.storyboard */; };
 		02E0BE862628CBE900CCA508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E0BE852628CBE900CCA508 /* main.m */; };
+		02E0BE912628D65A00CCA508 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E0BE902628D65A00CCA508 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		02E0BE822628CBE900CCA508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02E0BE842628CBE900CCA508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02E0BE852628CBE900CCA508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02E0BE902628D65A00CCA508 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02E0BE912628D65A00CCA508 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 			children = (
 				02E0BE722628CBE800CCA508 /* Week-1 */,
 				02E0BE712628CBE800CCA508 /* Products */,
+				02E0BE8F2628D65A00CCA508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +69,23 @@
 				02E0BE742628CBE800CCA508 /* AppDelegate.m */,
 				02E0BE762628CBE800CCA508 /* SceneDelegate.h */,
 				02E0BE772628CBE800CCA508 /* SceneDelegate.m */,
-				02E0BE792628CBE800CCA508 /* ViewController.h */,
-				02E0BE7A2628CBE800CCA508 /* ViewController.m */,
-				02E0BE7C2628CBE800CCA508 /* Main.storyboard */,
 				02E0BE7F2628CBE900CCA508 /* Assets.xcassets */,
 				02E0BE812628CBE900CCA508 /* LaunchScreen.storyboard */,
+				02E0BE7C2628CBE800CCA508 /* Main.storyboard */,
+				02E0BE792628CBE800CCA508 /* ViewController.h */,
+				02E0BE7A2628CBE800CCA508 /* ViewController.m */,
 				02E0BE842628CBE900CCA508 /* Info.plist */,
 				02E0BE852628CBE900CCA508 /* main.m */,
 			);
 			path = "Week-1";
+			sourceTree = "<group>";
+		};
+		02E0BE8F2628D65A00CCA508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02E0BE902628D65A00CCA508 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,13 +306,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = "Week-1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.Week-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,13 +326,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = "Week-1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.likhitgarimella.Week-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
